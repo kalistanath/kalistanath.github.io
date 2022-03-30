@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+        <title>Kalista Nathania's Resume</title>
+        <style>
+            * {
+                margin: auto;
+                padding: 0;
+            }
+
+            body {
+	            font-family: 'Poppins', sans-serif;
+                }
+
+            h1 {
+                font-size:xx-large;
+                font-weight: bold;
+                padding: 50px;
+                padding-bottom: 30px;
+        
+                }
+            
+            h2 {
+            font-size: medium;
+            font-weight:bold;
+            padding-left:50px;
+            line-height: 2;
+                 }
+
+            h3 {
+            font-size: medium;
+            font-weight:500;
+            padding-left:50px
+                 }
+
+                 
+            .box {
+                width: 1200px;
+                height: 650px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 0pt;
+                margin-top: 10pt;
+                border-radius: 25px;
+                  }
+                
+            .tab {
+                padding: 6px 9px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-top: none;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                float: left;
+                margin-left: 150px;
+                margin-right: -150px;
+                border-radius: 0px 0px 15px 15px;
+                 }
+          
+
+        </style>
+        <script>
+            var dataku = [
+                '<h1>About Me</h1><h2>Name</h2><h3>Kalista Nathania Lee Dotulong</h3><br><h2>Place, Date of Birth</h2><h3>Jakarta, 14 Oktober 2002</h3><br><h2>E-mail</h2><h3>kalista.nath@gmail.com</h3><br><h2>Phone</h2><h3>081908XXXXXX</h3><br><h2>Address</h2><h3>Jl. Bedugul 12 AS/4, Kalideres, Jakarta Barat</h3>',
+                '<h1>Education</h1><h2>Universitas Pelita Harapan (2020-present)</h2><h3>Visual Communication Design</h3><br><h2>SMA Sekolah Dian Harapan (2017-2020)</h2><h3>Jurusan Ilmu Pengetahuan Alam</h3><br><h2>SMP Dian Harapan (2014-2017)</h2>',
+                '<h1>Current Interests</h1><h2>Scrapbooking</h2><h3>Scrapbooking is a method of preserving, presenting and arranging personal and family history in the form of a book, box or card. Typical memorabilia include photographs, printed media, and artwork. Scrapbook albums are often decorated and frequently contain extensive journal entries or written descriptions.</h3><br><h2>Listening to music</h2><h3>Listening to music helps reduce stress and anxiety, improves mental functions like memory and reasoning, promotes cardiovascular health, increases pain tolerance, reduces depression which improves mood.</h3>'
+            ];
+            
+        </script>
+</head>
+<body>
+    <div id="resume" class="box"><h1>Kalista Nathania's Resume</h1></div>
+    <div id="tabsatu" class="tab" onclick="ubahwarna('azure', 'tabsatu', dataku[0]) ">ABOUT</div>
+    <div id="tabdua" class="tab" onclick="ubahwarna('lavender', 'tabdua', dataku[1])">EDUCATION</div>
+    <div id="tabtiga" class="tab" onclick="ubahwarna('lavenderblush', 'tabtiga', dataku[2])">INTERESTS</div>
+</body>
+</html>
+<script>
+    function ubahwarna (x,y,z) {
+        document.querySelector('#resume').style.backgroundColor = x;
+        document.querySelector('#resume').innerHTML = z;
+        if (y == 'tabsatu') {
+        document.querySelector('#tabsatu').style.backgroundColor = 'azure';
+        document.querySelector('#tabdua').style.backgroundColor = 'white';
+        document.querySelector('#tabtiga').style.backgroundColor = 'white';
+        }
+        else if (y == 'tabdua') {
+        document.querySelector('#tabsatu').style.backgroundColor = 'white';
+        document.querySelector('#tabdua').style.backgroundColor = 'lavender';
+        document.querySelector('#tabtiga').style.backgroundColor = 'white';
+        }
+        else  {
+        document.querySelector('#tabsatu').style.backgroundColor = 'white';
+        document.querySelector('#tabdua').style.backgroundColor = 'white';
+        document.querySelector('#tabtiga').style.backgroundColor = 'lavenderblush';
+        }
+    }
+</script>
